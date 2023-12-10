@@ -149,6 +149,13 @@ border: 3px solid rgba(255, 0, 0, 0.552);
   object-position: center;
 }
 
+.about p{
+  /* padding-left: 5rem; */
+  /* background-color: darkblue; */
+  padding-right: 16rem;
+  text-align: justify;
+}
+
 .img_about{
   background: rgba(255, 255, 255, 0.68);
 border-radius: 16px;
@@ -175,7 +182,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   --primary: crimson;
   --secondary: #000;
   --size: 150px;
-  animation: progress 2s 0.5s forwards;
+  animation: progress 2s 0.5s infinite;
   width: var(--size);
   aspect-ratio: 1;
   border-radius: 50%;
@@ -226,6 +233,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
     [role="progressbar"] {
     --size: 100px;
+}
+
+.about h3, .about h6{
+  /* background-color: darkcyan; */
+  text-align: center;
+}
+
+.about p{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  /* background-color: darkseagreen; */
+  text-align: justify;
 }
 
 }
