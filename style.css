@@ -104,13 +104,41 @@ transition: ease-in-out .2s;
 .CV{
     color: white;
     text-decoration: none;
-    background-color: crimson;
+    /* background-color: crimson; */
     padding: 10px 50px;
     text-transform: uppercase;
 }
 
 .home, .about, .contact, .project, .skill{
     min-height: 100vh;
+      overflow: hidden;
+}
+
+/* Animation Home */
+
+.home h2 span.animation{
+  color: crimson;
+  position:relative;
+}
+.home h2 span.animation::after{
+  content: "";
+  border-left: 2px solid crimson;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #000;
+animation-name: typing;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: step(10);
+}
+
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -20px 0 20px;
+  }
 }
 
 .about, .skill{
