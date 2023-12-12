@@ -7,6 +7,7 @@
 body{
     background-color: #000;
     color: white;
+    overflow-x: hidden;
 }
 
 nav{
@@ -21,6 +22,10 @@ label.logo{
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+}
+
+label.logo:hover{
+  background-color: #000;
 }
 nav ul{
   float: right;
@@ -128,10 +133,10 @@ transition: ease-in-out .2s;
   position: absolute;
   left: 0;
   background-color: #000;
-animation-name: typing;
+  animation-name: typing;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
-    animation-delay: step(10);
+    animation-delay: 1.3s;
 }
 
 @keyframes typing {
@@ -177,10 +182,13 @@ border: 3px solid rgba(255, 0, 0, 0.552);
   object-position: center;
 }
 
+/* ABOUT */
+.about .right-content{
+  margin-top: 4rem;
+}
+
 .about p{
-  /* padding-left: 5rem; */
-  /* background-color: darkblue; */
-  padding-right: 16rem;
+  padding-right: 15rem;
   text-align: justify;
 }
 
@@ -242,6 +250,35 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--primary);
 }
 
+.skill-bar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:768px) {
@@ -269,14 +306,25 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .about p{
-  padding-left: 4rem;
-  padding-right: 4rem;
-  /* background-color: darkseagreen; */
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: justify;
 }
 
+.about img{
+  margin-bottom: 1.5rem;
 }
 
+.about .right-content{
+margin-top: 0;
+}
+
+.skill-bar{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+}
 
 @media only screen and (max-width: 858px){
   .checkbtn{
@@ -300,7 +348,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   nav ul li a{
     font-size: 20px;
   }
-  a:hover,a.active{
+  ul li a:hover,a.active{
     background: none;
     color: crimson;
   }

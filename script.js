@@ -1,6 +1,5 @@
 // Get the container element
 let navContainer = document.getElementById("list_nav");
-console.log(navContainer);
 
 // Get all buttons with class="btn" inside the container
 let navLinks = navContainer.getElementsByClassName("nav_link");
@@ -13,3 +12,47 @@ for (let i = 0; i < navLinks.length; i++) {
     this.className += " active";
   });
 }
+
+ScrollReveal().reveal(".home", { duration: 1000, delay: 300, reset: true, scale: 1.2 });
+
+ScrollReveal().reveal(".fade-in", {
+  duration: 1000,
+  delay: 750,
+  reset: true,
+  scale:1.2
+})
+
+ScrollReveal().reveal(".project", {
+  duration: 850,
+  delay: 300,
+  reset: true,
+});
+ScrollReveal().reveal(".left-content", {
+  duration: 850,
+  delay: 300,
+  reset: true,
+  origin: "left",
+  distance: "300px",
+});
+ScrollReveal().reveal(".right-content", {
+  duration: 850,
+  delay: 300,
+  reset: true,
+  origin: "right",
+  distance: "300px",
+});
+ScrollReveal().reveal(".bot-content", {
+  duration: 850,
+  delay: 300,
+  reset: true,
+  origin: "top",
+  distance: "300px",
+});
+ScrollReveal().reveal(".top-content", {
+  duration: 850,
+  delay: 300,
+  reset: true,
+  origin: "bottom",
+  distance: "300px",
+});
+
