@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body{
@@ -47,8 +48,7 @@ nav ul li a{
   text-transform: uppercase;
   text-decoration: none;
 }
-a.active,a:hover{
-  background: crimson;
+li a.active,li a:hover{
   transition: .5s;
 }
 .checkbtn{
@@ -112,7 +112,6 @@ transition: ease-in-out .2s;
 .CV{
     color: white;
     text-decoration: none;
-    /* background-color: crimson; */
     padding: 10px 50px;
     text-transform: uppercase;
 }
@@ -121,6 +120,8 @@ transition: ease-in-out .2s;
     min-height: 100vh;
       overflow: hidden;
 }
+
+
 
 /* Animation Home */
 
@@ -195,6 +196,12 @@ border: 3px solid rgba(255, 0, 0, 0.552);
   text-align: justify;
 }
 
+.about .sosmed{
+  display: flex;
+  padding-right: 15rem;
+  gap: 20px;
+}
+
 .img_about{
   background: rgba(255, 255, 255, 0.68);
 border-radius: 16px;
@@ -203,6 +210,25 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+
+/* SOSMED */
+.sosmed .ig,.sosmed .fb{
+  color: black;
+  transition: ease-in-out .2s;
+}
+
+.sosmed .ig:hover{
+  color: #ee2a7b;
+  transform: scale(1.2);
+}
+
+.sosmed .fb:hover{
+  color: blue;
+  transform: scale(1.2);
+}
+
+
 
 /* Progress / SKill */
 @keyframes progress {
@@ -262,8 +288,20 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 /*  */
 
 
+/* SCROLL BAR*/
+::-webkit-scrollbar{
+  width: 10px;
+}
 
+::-webkit-scrollbar-track{
+  background-color: #000;
+}
 
+::-webkit-scrollbar-thumb{
+  background: rgb(0,0,0);
+background: linear-gradient(25deg,rgba(0,0,0,1)23%, rgba(255,0,16,1)100%);
+border-radius: 15px;
+}
 
 
 
@@ -327,6 +365,12 @@ margin-top: 0;
   grid-template-columns: repeat(2,1fr);
 }
 
+.about .sosmed{
+  display: flex;
+  justify-content: center;
+  padding-right: 0;
+}
+
 }
 
 @media only screen and (max-width: 858px){
@@ -350,10 +394,12 @@ margin-top: 0;
   }
   nav ul li a{
     font-size: 20px;
+    color: white;
   }
   ul li a:hover,a.active{
     background: none;
     color: crimson;
+
   }
   #check:checked ~ ul{
     left: 0;

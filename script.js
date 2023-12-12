@@ -21,6 +21,12 @@ ScrollReveal().reveal(".fade-in", {
   reset: true,
   scale:1.2
 })
+ScrollReveal().reveal(".fade-in-email", {
+  duration: 850,
+  delay: 300,
+  reset: true,
+  scale:1.2
+})
 
 ScrollReveal().reveal(".project", {
   duration: 850,
