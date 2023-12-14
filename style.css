@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
-}
-
-body{
+  }
+  
+  body{
     background-color: #000;
     color: white;
+    user-select: none;
 }
 
 main{
@@ -27,10 +27,6 @@ label.logo{
   padding: 0 100px;
   font-weight: bold;
 }
-
-label.logo:hover{
-  background-color: #000;
-}
 nav ul{
   float: right;
   margin-right: 20px;
@@ -48,8 +44,9 @@ nav ul li a{
   text-transform: uppercase;
   text-decoration: none;
 }
-li a.active,li a:hover{
-  transition: .5s;
+nav ul li a.active,nav ul li a:hover{
+  transition: ease-in-out .5s;
+  color: crimson;
 }
 .checkbtn{
   font-size: 30px;
@@ -86,7 +83,7 @@ font-weight: semibold;
 transition: ease-in-out .2s;
 }
 
-.nav_list ul li a:hover{
+ ul li a:hover{
     color: crimson;
 }
 
@@ -118,7 +115,7 @@ transition: ease-in-out .2s;
 
 .home, .about, .contact, .project, .skill{
     min-height: 100vh;
-      overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -303,6 +300,10 @@ background: linear-gradient(25deg,rgba(0,0,0,1)23%, rgba(255,0,16,1)100%);
 border-radius: 15px;
 }
 
+.contact {
+  user-select: text;
+}
+
 
 
 
@@ -371,6 +372,10 @@ margin-top: 0;
   padding-right: 0;
 }
 
+.contact .footer{
+  font-size: 12px;
+}
+
 }
 
 @media only screen and (max-width: 858px){
@@ -399,7 +404,6 @@ margin-top: 0;
   ul li a:hover,a.active{
     background: none;
     color: crimson;
-
   }
   #check:checked ~ ul{
     left: 0;
