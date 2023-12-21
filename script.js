@@ -62,3 +62,16 @@ ScrollReveal().reveal(".top-content", {
   distance: "300px",
 });
 
+const menuBurger = document.querySelector('.menu-tiga');
+let isWhite = true;
+menuBurger.addEventListener('click', () => {
+  if (isWhite) {
+    menuBurger.style.color = 'crimson';
+  } else {
+    menuBurger.style.color = 'white';
+  }
+  isWhite = !isWhite;
+  
+})
+
+

@@ -20,6 +20,7 @@ nav{
   width: 100%;
   z-index: 3;
 }
+
 label.logo{
   color: white;
   font-size: 35px;
@@ -172,6 +173,16 @@ input:nth-child(5){
 
 .list_project{
 border: 3px solid rgba(255, 0, 0, 0.552);
+height: 26rem;
+width: 18rem;
+background-color: #000;
+}
+
+p.card-text{
+display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
 }
 
 .status_bar{
